@@ -67,4 +67,6 @@ function fetchCharacters() {
    
    
    document.addEventListener('DOMContentLoaded', function() {
-  fetchHouses()
+  fetchCharacters()
+   })
+   
