@@ -67,6 +67,6 @@ function fetchCharacter() {
    
    
    document.addEventListener('DOMContentLoaded', function() {
-  fetchCharacters()
+  fetchCharacter()
    })
    
