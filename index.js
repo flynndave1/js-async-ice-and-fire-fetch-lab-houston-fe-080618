@@ -31,6 +31,14 @@ function fetchHouses() {
   // h4.innerHTML = `<h4>${houses[4]}`;
     }
 
+// function renderHouses(json) {
+//   const main = document.querySelector('main')
+//   json.forEach(houses => {
+//     const h5 = document.createElement('h5');
+//     h5.innerHTML = `<h5>${houses.name}</h5>`;
+//     main.appendChild(h5)
+//   })
+// }
 function renderHouses(json) {
   const main = document.querySelector('main')
   json.forEach(houses => {
@@ -39,7 +47,6 @@ function renderHouses(json) {
     main.appendChild(h5)
   })
 }
-
 
 
 document.addEventListener('DOMContentLoaded', function() {
