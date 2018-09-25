@@ -65,7 +65,7 @@ function fetchCharacter() {
   // h4.innerHTML = `<h4>${houses[4]}`;
    ; }
    
-   function renderHouses(json) {
+   function renderCharacters(json) {
   const main = document.querySelector('main')
   const h5 = document.createElement('h5');
   h5.innerHTML = `<h5>${json[4].name}</h5>`;
