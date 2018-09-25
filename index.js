@@ -17,18 +17,15 @@ function renderBooks(json) {
     main.appendChild(h4)
   })
 }
-
 document.addEventListener('DOMContentLoaded', function() {
   fetchBooks()
 })
-
-
 function fetchHouses() {
   //write fetch request to the Game of Thrones 
   fetch('https://anapioficeandfire.com/api/houses')
   .then(resp => resp.json())
   // .then(json => console.log(json()))
-  .then( json => renderHouses(json()));
+  .then( json => renderHouses(json));
   // h2 = document.createElement('h2')
   // h2.innerHTML = `<h2>${houses[4]}`;
     }
