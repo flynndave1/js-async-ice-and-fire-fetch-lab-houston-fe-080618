@@ -47,7 +47,7 @@ function renderHouses(json) {
   //   const h5 = document.createElement('h5');
   //   h5.innerHTML = `<h5>${houses.name[4]}</h5>`;
   //   main.appendChild(h5)
-  })
+  }
 }
 
 
