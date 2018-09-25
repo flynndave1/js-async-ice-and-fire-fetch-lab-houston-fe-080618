@@ -33,9 +33,9 @@ function fetchHouses() {
 function renderHouses(json) {
   const main = document.querySelector('main')
   json.forEach(houses => {
-    const h4a = document.createElement('h4a');
-    h4a.innerHTML = `<h4>${houses.name}</h4>`;
-    main.appendChild(h2)
+    const h5 = document.createElement('h5');
+    h4a.innerHTML = `<h5>${houses.name}</h5>`;
+    main.appendChild(h5)
   })
 }
 
