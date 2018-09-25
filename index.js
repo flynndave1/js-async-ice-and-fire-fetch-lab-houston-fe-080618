@@ -68,7 +68,7 @@ function fetchCharacter() {
    function renderCharacters(json) {
   const main = document.querySelector('main')
   const h5 = document.createElement('h5');
-  h5.innerHTML = `<h5>${json[4].name}</h5>`;
+  h5.innerHTML = `<h5>${json.name}</h5>`;
   main.appendChild(h5);
   
   }
