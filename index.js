@@ -40,6 +40,8 @@ function renderHouses(json) {
   })
 }
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
   fetchHouses()
 })
