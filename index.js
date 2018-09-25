@@ -50,8 +50,8 @@ function renderHouses(json) {
   //   main.appendChild(h5)
   }
 
-
-
 document.addEventListener('DOMContentLoaded', function() {
   fetchHouses()
 })
+
+
