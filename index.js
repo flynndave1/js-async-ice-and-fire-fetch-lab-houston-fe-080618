@@ -12,7 +12,7 @@ function fetchBooks() {
 function renderBooks(json) {
   const main = document.querySelector('main')
   json.forEach(book => {
-    const h4 = document.createElement('h2')
+    const h4 = document.createElement('h4')
     h4.innerHTML = `<h4>${book.name}</h4>`
     main.appendChild(h4)
   })
@@ -33,8 +33,8 @@ function fetchHouses() {
 function renderHouses(json) {
   const main = document.querySelector('main')
   json.forEach(houses => {
-    const h4 = document.createElement('h4');
-    h4.innerHTML = `<h4>${houses.name}</h4>`;
+    const h4a = document.createElement('h4a');
+    h4a.innerHTML = `<h4>${houses.name}</h4>`;
     main.appendChild(h2)
   })
 }
