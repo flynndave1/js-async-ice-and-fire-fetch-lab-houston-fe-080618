@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function fetchCharacter() {
   //write fetch request to the Game of Thrones 
-  fetch('https://anapioficeandfire.com/api/character')
+  fetch('https://anapioficeandfire.com/api/characters/1031')
   .then(resp3 => resp3.json())
   .then(json => console.log(json()))
   // .then( json => renderCharacters(json))
