@@ -26,8 +26,8 @@ function fetchHouses() {
   .then(resp => resp.json())
   // .then(json => console.log(json()))
   .then( json => renderHouses(json));
-  // h2 = document.createElement('h2')
-  // h2.innerHTML = `<h2>${houses[4]}`;
+  // h4 = document.createElement('h4')
+  // h4.innerHTML = `<h4>${houses[4]}`;
     }
 
 function renderHouses(json) {
