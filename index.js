@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function fetchHouses() {
   //write fetch request to the Game of Thrones 
   fetch('https://anapioficeandfire.com/api/houses')
-  .then(resp => resp.json())
+  .then(resp2 => resp2.json())
   // .then(json => console.log(json()))
-  .then( json => renderHouses(json[4]));
+  .then( json => renderHouses(json));
   // h4 = document.createElement('h4')
   // h4.innerHTML = `<h4>${houses[4]}`;
     }
