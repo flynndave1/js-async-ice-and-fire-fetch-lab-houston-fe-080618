@@ -25,8 +25,8 @@ function fetchHouses() {
   fetch('https://anapioficeandfire.com/api/houses')
   .then(resp2 => resp2.json())
   // .then(json => console.log(json()))
-  .then( json => renderHouses(json));
- 
+  .then( json => renderHouses(json))
+   .then(json => console.log(json()));
   // h4 = document.createElement('h4')
   // h4.innerHTML = `<h4>${houses[4]}`;
     }
