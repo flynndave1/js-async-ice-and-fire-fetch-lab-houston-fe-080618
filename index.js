@@ -1,16 +1,80 @@
+
 function fetchBooks() {
-  //write fetch request to the Game of Thrones API
-}
+  //write fetch request to the Game of Thrones 
+  fetch('https://anapioficeandfire.com/api/books')
+  .then(resp => resp.json())
+  // .then(json => console.log(json)) 
+ .then (json => renderBooks(json));
+  // .then( json => renderBooks(json));
+
+    }
 
 function renderBooks(json) {
   const main = document.querySelector('main')
   json.forEach(book => {
-    const h2 = document.createElement('h2')
-    h2.innerHTML = `<h2>${book.name}</h2>`
-    main.appendChild(h2)
+    const h4 = document.createElement('h4')
+    h4.innerHTML = `<h4>${book.name}</h4>`
+    main.appendChild(h4)
   })
 }
-
 document.addEventListener('DOMContentLoaded', function() {
   fetchBooks()
 })
+function fetchHouses() {
+  //write fetch request to the Game of Thrones 
+  fetch('https://anapioficeandfire.com/api/houses')
+  .then(resp2 => resp2.json())
+  // .then(json => console.log(json()))
+  .then( json => renderHouses(json))
+  // .then(json => console.log(json()));
+  // h4 = document.createElement('h4')
+  // h4.innerHTML = `<h4>${houses[4]}`;
+   ; }
+
+// function renderHouses(json) {
+//   const main = document.querySelector('main')
+//   json.forEach(houses => {
+//     const h5 = document.createElement('h5');
+//     h5.innerHTML = `<h5>${houses.name}</h5>`;
+//     main.appendChild(h5)
+//   })
+// }
+function renderHouses(json) {
+  const main = document.querySelector('main')
+  const h5 = document.createElement('h5');
+  h5.innerHTML = `<h5>${json[4].name}</h5>`;
+  main.appendChild(h5);
+  // json.forEach(houses => {
+  //   const h5 = document.createElement('h5');
+  //   h5.innerHTML = `<h5>${houses.name[4]}</h5>`;
+  //   main.appendChild(h5)
+  }
+
+document.addEventListener('DOMContentLoaded', function() {
+  fetchHouses()
+})
+
+function fetchCharacter() {
+  //write fetch request to the Game of Thrones 
+  fetch('https://anapioficeandfire.com/api/characters/1031')
+  .then(resp3 => resp3.json())
+  // .then(json => console.log(json()))
+  .then( json => renderCharacters(json))
+  // .then(json => console.log(json()));
+  // h4 = document.createElement('h4')
+  // h4.innerHTML = `<h4>${houses[4]}`;
+   ; }
+   
+   function renderCharacters(json) {
+  const main = document.querySelector('main')
+  const h5 = document.createElement('h5');
+  h5.innerHTML = `<h5>${json.name}</h5>`;
+  main.appendChild(h5);
+  
+  }
+
+   
+   document.addEventListener('DOMContentLoaded', function() {
+  fetchCharacter()
+   })
+   
