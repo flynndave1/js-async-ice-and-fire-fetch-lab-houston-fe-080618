@@ -64,3 +64,7 @@ function fetchCharacters() {
   // h4 = document.createElement('h4')
   // h4.innerHTML = `<h4>${houses[4]}`;
    ; }
+   
+   
+   document.addEventListener('DOMContentLoaded', function() {
+  fetchHouses()
