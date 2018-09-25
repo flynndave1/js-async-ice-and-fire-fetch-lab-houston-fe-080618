@@ -48,7 +48,7 @@ function renderHouses(json) {
   //   h5.innerHTML = `<h5>${houses.name[4]}</h5>`;
   //   main.appendChild(h5)
   }
-}
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
